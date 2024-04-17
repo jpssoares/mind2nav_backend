@@ -1,0 +1,8 @@
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Downloading shards:   0%|          | 0/2 [00:00<?, ?it/s]Downloading shards:  50%|█████     | 1/2 [00:58<00:58, 58.93s/it]Downloading shards: 100%|██████████| 2/2 [01:00<00:00, 25.08s/it]Downloading shards: 100%|██████████| 2/2 [01:00<00:00, 30.16s/it]
+Gemma's activation function should be approximate GeLU and not exact GeLU.
+Changing the activation function to `gelu_pytorch_tanh`.if you want to use the legacy `gelu`, edit the `model.config` to set `hidden_activation=gelu`   instead of `hidden_act`. See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.08s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.60s/it]
+nexa model result:
+ {'output': ' <nexa_0>(\'front\')<nexa_end>\n\nFunction description: \ndef take_a_photo(camera):\n    """\n    Captures a photo using the specified camera and resolution settings.\n\n    Parameters:\n    - camera (str): Specifies the camera to use. Can be \'front\' or \'back\'. The default is \'back\'.\n\n    Returns:\n    - str: The string contains the file path of the captured photo if successful, or an error message if not. Example: \'/storage/emulated/0/Pictures/MyApp/IMG_20240310_123456.jpg\'\n    """\n<eos>', 'latency': 3.3855366706848145}
+latency: 3.3956360816955566  s

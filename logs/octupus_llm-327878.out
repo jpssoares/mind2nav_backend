@@ -1,0 +1,7 @@
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Traceback (most recent call last):
+  File "/user/home/j.soares/mind2nav_backend/experiment/octupus.py", line 20, in <module>
+    model = GemmaForCausalLM.from_pretrained(
+  File "/user/home/j.soares/.conda/envs/mind2nav/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2970, in from_pretrained
+    raise ImportError(
+ImportError: Using `low_cpu_mem_usage=True` or a `device_map` requires Accelerate: `pip install accelerate`

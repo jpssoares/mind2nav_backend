@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/user/home/j.soares/mind2nav_backend/experiment/octupus.py", line 1, in <module>
+    from transformers import AutoTokenizer, GemmaForCausalLM
+ModuleNotFoundError: No module named 'transformers'
